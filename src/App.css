@@ -1,3 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #AB886D;
+  transition: background-color 0.5s ease-in-out;
+}
 
+#quote-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  background-color: #1E201E;
+  color: white;
+  font-family: Jost;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0px;
+}
+@media (max-width: 768px) {
+  #quote-box {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  #quote-box {
+    font-size: 1rem;
+  }
+}
+#quote-box #author {
+  font-style: italic;
+}
+#quote-box #text {
+  padding: 10px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+#quote-box #tweet-quote {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+h1 {
+  font-family: Jost;
+  font-style: italic;
+  font-size: 107px !important;
+  letter-spacing: 16px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
 
 /*# sourceMappingURL=App.css.map */
